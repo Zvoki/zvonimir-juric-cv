@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV of Zvonimir Juric, aspiring frontend developer.">
+  <title>Zvonimir Juric | Frontend Developer</title>
+  <style>
+    :root { --ink:#17212b; --muted:#5d6a73; --accent:#0f766e; --accent-soft:#dff4ef; --line:#dce5e8; --paper:#fff; --background:#eef3f2; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--background); font-family:"Segoe UI",Tahoma,sans-serif; line-height:1.55; }
+    a { color:var(--accent); }
+    .page { width:min(100% - 32px,1080px); margin:32px auto; background:var(--paper); box-shadow:0 18px 50px rgba(23,33,43,.1); }
+    header { padding:48px 56px 40px; color:white; background:var(--ink); display:flex; justify-content:space-between; gap:24px; align-items:end; }
+    header h1 { margin:0; font-size:clamp(2.5rem,7vw,5.5rem); line-height:.95; letter-spacing:-.04em; font-weight:700; }
+    header p { margin:14px 0 0; color:#b8d7d2; font-size:1.1rem; }
+    .header-label { margin:0 0 8px; color:#8bd2c7; font-size:.8rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+    .contact { text-align:right; white-space:nowrap; color:#e7f4f1; }
+    .contact span { display:block; }
+    .language-switcher { display:flex; justify-content:flex-end; gap:10px; margin-bottom:18px; font-size:.85rem; font-weight:700; }
+    .language-switcher a { color:#b8d7d2; text-decoration:none; }
+    .language-switcher a[aria-current="page"] { color:white; text-decoration:underline; text-underline-offset:4px; }
+    main { display:grid; grid-template-columns:1.45fr .8fr; gap:48px; padding:46px 56px 56px; }
+    section { margin-bottom:42px; } section:last-child { margin-bottom:0; }
+    h2 { margin:0 0 22px; padding-bottom:9px; border-bottom:2px solid var(--ink); font-size:1.45rem; letter-spacing:-.02em; }
+    h3 { margin:0; font-size:1.08rem; }
+    p { margin:0 0 14px; }
+    .intro { font-size:1.08rem; color:#34444e; }
+    .entry { position:relative; margin-bottom:28px; padding-left:22px; border-left:3px solid var(--accent-soft); }
+    .entry::before { content:""; position:absolute; top:5px; left:-7px; width:11px; height:11px; border-radius:50%; background:var(--accent); }
+    .date { margin-bottom:4px; color:var(--accent); font-size:.9rem; font-weight:700; }
+    .role { margin-bottom:6px; color:var(--muted); font-weight:600; }
+    .project-link { display:inline-block; margin-top:4px; overflow-wrap:anywhere; font-weight:600; }
+    .skill-group { margin-bottom:20px; } .skill-group strong { display:block; margin-bottom:4px; } .skill-group p { color:var(--muted); }
+    .side-section { padding-left:28px; border-left:1px solid var(--line); }
+    .side-section section { margin-bottom:34px; }
+    .muted { color:var(--muted); }
+    .print-button { position:fixed; right:24px; bottom:24px; padding:11px 16px; border:0; border-radius:4px; color:white; background:var(--accent); cursor:pointer; font:inherit; font-weight:700; box-shadow:0 5px 16px rgba(15,118,110,.25); }
+    .print-button:hover { background:#115e59; }
+    @media (max-width:760px) { .page { width:100%; margin:0; } header { padding:34px 24px; display:block; } .contact { margin-top:24px; text-align:left; white-space:normal; } .language-switcher { justify-content:flex-start; } main { display:block; padding:34px 24px 44px; } .side-section { margin-top:42px; padding-left:0; border-left:0; } }
+    @media print { body { background:white; } .page { width:100%; margin:0; box-shadow:none; } .print-button { display:none; } header { padding:32px 40px; } main { padding:32px 40px; } a { color:inherit; text-decoration:none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <p class="header-label">CV</p>
+        <h1>Zvonimir Juric</h1>
+        <p>Aspiring Frontend Developer</p>
+      </div>
+      <div class="contact" aria-label="Contact details">
+        <nav class="language-switcher" aria-label="Language">
+          <a href="index.html">Svenska</a>
+          <span aria-hidden="true">|</span>
+          <a href="cv-en.html" aria-current="page">English</a>
+        </nav>
+        <span>076-580 63 43</span>
+        <span><a href="mailto:zvonimir.juric@utb.ecutbildning.se">zvonimir.juric@utb.ecutbildning.se</a></span>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section>
+          <h2>Profile</h2>
+          <p class="intro">Aspiring frontend developer with strong motivation to create modern, user-friendly and visually engaging web solutions. I am studying Frontend Development at EC Utbildning and building skills in HTML, CSS, JavaScript, TypeScript, React, Vite, Git/GitHub, Express.js and SQLite. My extensive experience in service and technical support has given me strong communication and problem-solving skills, together with a natural user focus.</p>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <article class="entry">
+            <div class="date">2025–2026</div>
+            <h3>Full-stack Application</h3>
+            <p class="role">Student project | E-commerce platform</p>
+            <p>A full-stack application created for portfolio presentation. Users can search for products, view product details and manage the product list.</p>
+            <a class="project-link" href="https://my-ny-frontend.netlify.app/" target="_blank" rel="noopener">my-ny-frontend.netlify.app</a>
+            <p class="muted">The backend runs on Render and the frontend on Netlify, so the first load may take a little longer.</p>
+          </article>
+          <article class="entry">
+            <h3>Tech Store</h3>
+            <p class="role">Group project | E-commerce for technology products</p>
+            <p>Full-stack project developed with React, Vite, SCSS, ASP.NET Core Web API, Entity Framework Core and PostgreSQL. The project includes a product catalogue, search, category filtering, shopping cart, checkout, administration panel and JWT-based authentication.</p>
+            <p>The project demonstrates skills in frontend and backend development, REST APIs, database management, state management and responsive design.</p>
+            <a class="project-link" href="https://www.youtube.com/watch?v=Z-zXfMif6s0" target="_blank" rel="noopener">Project video</a>
+          </article>
+        </section>
+
+        <section>
+          <h2>Work Experience</h2>
+          <article class="entry"><div class="date">2023–present</div><h3>Self-employed: Social Hub Connect</h3><p>Provides businesses with Facebook Ads management and Google Business Profile reputation management.</p></article>
+          <article class="entry"><div class="date">2012–2022</div><h3>Train Host</h3><p class="role">Veolia Transport Sverige AB, Transdev Sverige AB, SJ Öresund | Kalmar and Karlskrona</p><p>Worked as a train host and onboard manager for almost nine years.</p></article>
+          <article class="entry"><div class="date">2010–2011</div><h3>Printing Assistant</h3><p class="role">Stråfors Svenska AB | Nybro</p><p>Worked as an assistant in a printing operation.</p></article>
+          <article class="entry"><div class="date">2003–2006</div><h3>Machine Operator</h3><p class="role">Gunnar Andersson | Smålandsstenar</p><p>Operated a machine used for cutting sheet metal.</p></article>
+          <article class="entry"><div class="date">2001–2002</div><h3>Internet Support Technician</h3><p class="role">Sykes | Sveg</p><p>Provided first-line support for customers with internet problems and worked in HP customer service.</p></article>
+        </section>
+      </div>
+
+      <aside class="side-section">
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="skill-group"><strong>Frontend</strong><p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Vite</p></div>
+          <div class="skill-group"><strong>Backend</strong><p>Node.js, Express.js, SQLite, C#, ASP.NET Core Web API</p></div>
+          <div class="skill-group"><strong>Databases</strong><p>SQLite, PostgreSQL, Entity Framework Core</p></div>
+          <div class="skill-group"><strong>Tools and ways of working</strong><p>Git, GitHub, VS Code, Figma, Scrum and agile methods</p></div>
+          <div class="skill-group"><strong>Other</strong><p>UX/UI principles, responsive design, Microsoft Office</p></div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <article class="entry"><div class="date">2025–present</div><h3>Frontend Development</h3><p class="role">EC Utbildning, Växjö</p><p>Agile project methods, backend development, thesis project, HTML and CSS, JavaScript, and UX & UI.</p></article>
+          <article class="entry"><div class="date">2008–2009</div><h3>Security Systems Technician</h3><p class="role">Lernia, Helsingborg</p><p>Computer studies, electronics, electrical installation, control technology and telecommunications installation.</p></article>
+          <article class="entry"><div class="date">1999–2000</div><h3>Upper Secondary Studies</h3><p class="role">Komvux, Gislaved</p><p>Swedish, mathematics, history, English, computer studies and psychology.</p></article>
+          <article class="entry"><div class="date">1986–1990</div><h3>Forestry Technology</h3><p>Upper secondary engineering qualification.</p></article>
+        </section>
+
+        <section><h2>Languages</h2><p><strong>Swedish</strong><br>Good spoken and written skills</p><p><strong>English</strong><br>Good spoken and written skills</p></section>
+        <section><h2>References</h2><p class="muted">Available upon request.</p></section>
+      </aside>
+    </main>
+  </div>
+  <button class="print-button" type="button" onclick="window.print()">Print / save as PDF</button>
+</body>
+</html>
